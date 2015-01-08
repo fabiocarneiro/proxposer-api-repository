@@ -50,6 +50,11 @@ return [
             ],
         ],
     ],
+    'zf-versioning' => [
+        'uri' => [
+            0 => 'api.rest.repository',
+        ],
+    ],
     'zf-content-negotiation' => [
         'controllers' => [
             'ZFBrasil\Proxposer\Api\Repository\V1\Rest\Controller' => 'HalJson',
