@@ -1,0 +1,30 @@
+{
+    "name": "zfbrasil/proxposer-api-repository",
+    "description": "Api module for repository management",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "ssh://git@github.com/fabiocarneiro/repository-manager"
+        }
+    ],
+    "require": {
+        "zfcampus/zf-apigility": "~1.0",
+        "zfbrasil/repository-manager": "dev-feature/repository-manager"
+    },
+    "require-dev": {
+        "zfcampus/zf-apigility-admin": "~1.0",
+        "zfcampus/zf-development-mode": "~2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fabiocarneiro",
+            "email": "fahecs@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ZFBrasil\\Proxposer\\Api\\Repository\\": "src"
+        }
+    }
+}
