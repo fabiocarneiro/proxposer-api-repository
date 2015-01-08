@@ -5,11 +5,16 @@
         {
             "type": "vcs",
             "url": "ssh://git@github.com/fabiocarneiro/repository-manager"
+        },
+        {
+            "type": "vcs",
+            "url": "ssh://git@github.com/fabiocarneiro/proxposer-api"
         }
     ],
     "require": {
         "zfcampus/zf-apigility": "~1.0",
-        "zfbrasil/repository-manager": "dev-feature/repository-manager"
+        "zfbrasil/repository-manager": "dev-feature/repository-manager",
+        "zfbrasil/proxposer-api": "dev-feature/default-configs"
     },
     "require-dev": {
         "zfcampus/zf-apigility-admin": "~1.0",
