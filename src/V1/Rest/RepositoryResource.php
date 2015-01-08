@@ -14,6 +14,9 @@ class RepositoryResource extends AbstractResourceListener
      */
     protected $repositoryManager;
 
+    /**
+     * @param RepositoryManager $repositoryManager
+     */
     public function __construct(RepositoryManager $repositoryManager)
     {
         $this->repositoryManager = $repositoryManager;
