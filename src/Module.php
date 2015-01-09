@@ -4,10 +4,10 @@ namespace ZFBrasil\Proxposer\Api\Repository;
 
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\DependencyIndicatorInterface;
-use ZF\Apigility\ApigilityModuleInterface;
+use ZF\Apigility\Provider\ApigilityProviderInterface;
 use ZFBrasil\Proxposer\Api;
 
-class Module implements ConfigProviderInterface, DependencyIndicatorInterface, ApigilityModuleInterface
+class Module implements ConfigProviderInterface, DependencyIndicatorInterface, ApigilityProviderInterface
 {
     /**
      * {@inheritDoc}
