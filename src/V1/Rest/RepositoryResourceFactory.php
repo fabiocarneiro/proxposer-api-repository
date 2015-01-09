@@ -10,6 +10,7 @@ class RepositoryResourceFactory implements FactoryInterface
 {
     /**
      * {@inheritDoc}
+     * @return RepositoryResource
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {

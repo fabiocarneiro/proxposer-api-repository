@@ -4,7 +4,8 @@ namespace ZFBrasil\Proxposer\Api\Repository\V1\Rest;
 
 use ZF\ApiProblem\ApiProblem;
 use ZF\Rest\AbstractResourceListener;
-use ZFBrasil\RepositoryManager\Model\Repository;
+use ZFBrasil\RepositoryManager\DTO\Repository;
+use ZFBrasil\RepositoryManager\Model\SelectableRepository;
 use ZFBrasil\RepositoryManager\Service\RepositoryManager;
 
 class RepositoryResource extends AbstractResourceListener
@@ -25,18 +26,15 @@ class RepositoryResource extends AbstractResourceListener
     /**
      * Create a resource
      *
-     * @param  mixed $data
+     * @param  Repository $data
      *
-     * @return ApiProblem|mixed
+     * @return ApiProblem|SelectableRepository
      */
     public function create($data)
     {
-        $repository           = Repository::$data['type']($data['path']);
-        $selectableRepository = $this->repositoryManager->addRepository(
-            $repository
+        return $this->repositoryManager->addRepository(
+            $data
         );
-
-        return $selectableRepository;
     }
 
     /**
