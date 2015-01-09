@@ -18,10 +18,7 @@ class Module implements ConfigProviderInterface, DependencyIndicatorInterface, A
     }
 
     /**
-     * Expected to return an array of modules on which the current one depends
-     * on
-     *
-     * @return array
+     * {@inheritDoc}
      */
     public function getModuleDependencies()
     {
