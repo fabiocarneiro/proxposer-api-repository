@@ -7,7 +7,8 @@ use ZFBrasil\RepositoryManager\Model\SelectableRepository;
 use ZFBrasil\Proxposer\Api\Repository;
 use ZFBrasil\Proxposer\Api\Repository\V1\Rest\RepositoryResource;
 use ZFBrasil\Proxposer\Api\Repository\V1\InputFilter\Repository as InputFilter;
-use ZFBrasil\Proxposer\Api\Repository\V1\DTO\Repository as DTO;
+use ZFBrasil\RepositoryManager\DTO\Repository as DTO;
+use ZFBrasil\Proxposer\Api\Repository\V1\Rest\RepositoryResourceFactory;
 
 return [
     'router' => [
@@ -24,6 +25,11 @@ return [
                     ],
                 ],
             ],
+        ]
+    ],
+    'service_manager' => [
+        'factories' => [
+            RepositoryResource::class => RepositoryResourceFactory::class
         ]
     ],
     'zf-rest' => [
