@@ -83,7 +83,7 @@ return [
     'zf-hal' => [
         'renderer' => [
             'hydrators' => [
-                'Squid\Correios\\Model\\Rate' => 'ArraySerializable',
+                SelectableRepository::class => DoctrineObject::class,
             ],
         ],
         'metadata_map' => [
