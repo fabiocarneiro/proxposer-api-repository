@@ -32,6 +32,11 @@ return [
             RepositoryResource::class => RepositoryResourceFactory::class
         ]
     ],
+    'input_filters' => [
+        'invokables' => [
+            InputFilter::class => InputFilter::class
+        ]
+    ],
     'zf-rest' => [
         'ZFBrasil\Proxposer\Api\Repository\V1\Rest\Controller' => [
             'listener' => RepositoryResource::class,
